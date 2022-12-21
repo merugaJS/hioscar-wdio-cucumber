@@ -7,7 +7,7 @@ Automation Project to run tests in web browser (chrome, firefox, safari) using w
 - Node version 16 or higher
 - chrome latest
 - firefox latest
-- safari latest
+- safari latest --> (https://developer.apple.com/documentation/webkit/testing_with_webdriver_in_safari)
 
 # How to run the test
 
@@ -25,3 +25,8 @@ To run tests in firefox browser
 $ npm run safari
 ```
 To run tests in safari browser
+
+```sh
+$ npm run multi
+```
+To run tests in chrome, firefox & safari at the same time
