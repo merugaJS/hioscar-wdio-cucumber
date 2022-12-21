@@ -11,29 +11,30 @@ Automation Project to run tests in web browser (chrome, firefox, safari) using w
 
 # How to run the test
 
+To run tests in browserstack with all browsers (chrome, firefox, safari)
 ```sh
 $ BROWSERSTACK_USERNAME=${USERNAME} BROWSERSTACK_ACCESS_KEY=${ACCESS_KEY} npm run browserstack-multi
 ```
-To run tests in browserstack with all browsers (chrome, firefox, safari)
+
+To run tests in chrome browser
 ```sh
 $ npm run chrome
 ```
-To run tests in chrome browser
 
+To run tests in firefox browser
 ```sh
 $ npm run firefox
 ```
-To run tests in firefox browser
 
+To run tests in safari browser
 ```sh
 $ npm run safari
 ```
-To run tests in safari browser
 
+To run tests in chrome, firefox & safari at the same time
 ```sh
 $ npm run multi
 ```
-To run tests in chrome, firefox & safari at the same time
 
 
 
