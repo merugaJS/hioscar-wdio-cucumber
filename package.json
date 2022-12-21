@@ -20,6 +20,7 @@
     "chrome": "./node_modules/.bin/wdio ./config/wdio-chrome.js",
     "firefox": "./node_modules/.bin/wdio ./config/wdio-firefox.js",
     "safari": "./node_modules/.bin/wdio ./config/wdio-safari.js",
-    "multi": "./node_modules/.bin/wdio ./config/wdio-multi-browser.js"
+    "multi": "./node_modules/.bin/wdio ./config/wdio-multi-browser.js",
+    "browserstack-multi": "./node_modules/.bin/wdio ./config/wdio-browserstack.js"
   }
 }
