@@ -17,6 +17,9 @@
     "chai": "^4.3.7"
   },
   "scripts": {
-    "wdio": "wdio run config/wdio.conf.js"
+    "chrome": "wdio run config/wdio.conf.js ./config/wdio-chrome.js",
+    "firefox": "wdio run config/wdio.conf.js ./config/wdio-firefox.js",
+    "safari": "wdio run config/wdio.conf.js ./config/wdio-safari.js",
+    "multi-browser": "wdio run config/wdio.conf.js ./config/wdio-multi-browser.js"
   }
 }
