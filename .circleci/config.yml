@@ -5,13 +5,13 @@ jobs:
   tests:
     docker:
       - image: 'cimg/node:16.19.1'
-    working_directory: ~/hioscar-wdio-cucumber
+    working_directory: << pipeline.parameters.workingdir >>
     steps:
       - checkout
       - run:
           name: Run WebDriverIO tests
           command: |
-            - echo "$BROWSER"
+            - echo "<< pipeline.parameters.browser >>"
             - npm i && npm run browserstack-multi
 workflows:
   Automation:
