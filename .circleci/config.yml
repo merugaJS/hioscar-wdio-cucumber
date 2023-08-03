@@ -7,10 +7,9 @@ jobs:
       - image: 'cimg/node:16.19.1'
     steps:
       - checkout
-      - node/install-packages:
-          pkg-manager: npm
       - run:
           name: Run WebDriverIO tests
+          command: npm install
           command: npm run chrome
 workflows:
   Automation:
