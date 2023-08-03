@@ -8,11 +8,11 @@ jobs:
     working_directory: ~/hioscar-wdio-cucumber
     steps:
       - checkout
-      - node/install-packages:
-          pkg-manager: npm
       - run:
           name: Run WebDriverIO tests
-          command: npm run chrome
+          command: |
+            - echo "$BROWSER"
+            - npm i && npm run browserstack-multi
 workflows:
   Automation:
     jobs:
