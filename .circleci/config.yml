@@ -8,9 +8,11 @@ jobs:
     working_directory: ~/hioscar-wdio-cucumber
     steps:
       - checkout
+      - node/install-packages:
+          pkg-manager: npm
       - run:
           name: Run WebDriverIO tests
-          command: npm i && npm run chrome
+          command: npm run chrome
 workflows:
   Automation:
     jobs:
