@@ -1,6 +1,5 @@
-version: 2.1
-orbs:
-  node: circleci/node@4.1.0
+version: 2
+
 jobs:
   tests:
     docker:
@@ -9,10 +8,11 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Run WebDriverIO tests
-          command: |
-            - npm i
-            - echo "hello"
+          name: Install Dependecies
+          command: npm install
+      - run:
+          name: Print Echo
+          command: echo $BROWSERSTACK_USERNAME
 workflows:
   Automation:
     jobs:
