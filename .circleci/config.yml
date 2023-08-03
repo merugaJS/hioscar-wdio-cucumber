@@ -11,7 +11,8 @@ jobs:
       - run:
           name: Run WebDriverIO tests
           command: |
-            - echo $BROWSERSTACK_ACCESS_KEY
+            - npm i
+            - echo "hello"
 workflows:
   Automation:
     jobs:
