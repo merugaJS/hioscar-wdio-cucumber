@@ -1,19 +1,13 @@
 version: 2
-
 jobs:
-  tests:
+  build:
     docker:
-      - image: 'cimg/node:16.19.1'
-    working_directory: ~/hioscar-wdio-cucumber
+      - image: circleci/node:16
     steps:
       - checkout
       - run:
-          name: Install Dependecies
+          name: install dependencies
           command: npm install
       - run:
-          name: Print Echo
-          command: echo $BROWSERSTACK_USERNAME
-workflows:
-  Automation:
-    jobs:
-      - tests
+          name: test
+          command: npm run chrome
