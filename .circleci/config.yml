@@ -11,7 +11,6 @@ jobs:
       - run:
           name: Run WebDriverIO tests
           command: |
-            - echo "<< parameters.browser >>"
             - npm i && npm run browserstack-multi
 workflows:
   Automation:
