@@ -13,6 +13,6 @@ jobs:
           name: Run WebDriverIO tests
           command: npm run chrome
 workflows:
-  version: 2
+  Automation:
     jobs:
       - tests
