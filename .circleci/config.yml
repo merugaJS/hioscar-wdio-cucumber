@@ -10,8 +10,8 @@ jobs:
       - checkout
       - run:
           name: Run WebDriverIO tests
-          command: |
-            - npm i
+          command: npm ci
+          command: echo $BROWSERSTACK_ACCESS_KEY
 workflows:
   Automation:
     jobs:
