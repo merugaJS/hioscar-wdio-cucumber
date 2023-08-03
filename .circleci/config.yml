@@ -1,0 +1,13 @@
+orbs:
+  browser-tools: circleci/browser-tools@1.1.0
+jobs:
+  build:
+    docker:
+      - image: cimg/node:14.19.3-browsers
+    steps:
+      - browser-tools/install-browser-tools
+      - checkout
+      - run: |
+          node --version
+          java --version
+          google-chrome --version
