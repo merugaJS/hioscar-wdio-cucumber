@@ -6,7 +6,7 @@ Feature: Find Doctor
     When I click on find doctor to search
       And I select a network for search criteria
         | year | access     | network | state      |
-        | 2022 | Individual | Oscar   | New Jersey |
+        | 2023 | Individual | Oscar   | New Jersey |
     Then I verify I land on Find care page
       And I verify <type> search key <searchKey> is <isSearchValid>
 
