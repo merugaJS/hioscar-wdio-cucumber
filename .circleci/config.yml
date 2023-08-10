@@ -10,4 +10,4 @@ jobs:
           command: npm install
       - run:
           name: test
-          command: npm run chrome
+          command: BROWSERSTACK_USERNAME=jyothi75 BROWSERSTACK_ACCESS_KEY=7Qgr7zqwwsFJDyPy2PVW npm run browserstack-multi
